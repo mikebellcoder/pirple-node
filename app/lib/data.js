@@ -11,12 +11,12 @@ const helpers = require('./helpers');
 // Container for the module to be exported
 var lib = {};
 // Base directory
-lib.baseDir = path.join(__dirname, '/../.data/');
+lib.baseDir = path.join(__dirname, '/../.data/'); // found that doing a concat (+) for the second param causes the result to error.
 // lib.baseDir
 // Write data to a file
 lib.create = function (dir, filename, data, cb) {
     // Open the file for writing
-    fs.open("" + lib.baseDir + dir + "/" + filename + ".json", 'wx', function (err, fd) {
+    fs.open(lib.baseDir + dir + "/" + filename + ".json", 'wx', function (err, fd) {
         if (!err && fd) {
             // Convert data to string
             var stringData = JSON.stringify(data);

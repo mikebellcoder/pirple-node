@@ -24,7 +24,7 @@ environments.production = {
 };
 
 // Determine which environment was passed as command-line argument
-var currentEnvironment = typeof(process.env.NODE_ENV) == 'string' ? process.env.NODE_ENV.toLowerCase() : '';
+var currentEnvironment = typeof(process.env.NODE_ENV) == 'string' ? process.env.NODE_ENV.toLowerCase() : 'dev';
 
 // sanity check
 console.log(`Node is in: ${currentEnvironment} mode`);

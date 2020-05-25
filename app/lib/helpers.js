@@ -26,7 +26,7 @@ helpers.parseJsonToObject = function(str) {
         const obj = JSON.parse(str);
         return obj;
     } catch (e) {
-        console.log('catch is firing');
+        console.log('catch is firing, error with provided json string');
         return {};
     }
 }
