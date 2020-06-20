@@ -1,0 +1,276 @@
+{
+	"info": {
+		"_postman_id": "aa7810b8-7e40-41a1-8db3-d4fb65a2b7af",
+		"name": "PirpleNodeCourse",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://localhost:3001/users",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"firstName\": \"Donald\",\n\t\"lastName\": \"Duck\",\n\t\"password\": \"password123\",\n\t\"phone\": \"8888888888\",\n\t\"tosAgreement\": true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:3001/users",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:3001/users?phone=8888888888",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "m63ztpwn8t8etjfypope",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"firstName\": \"Donald\",\n\t\"lastName\": \"Duck\",\n\t\"password\": \"password123\",\n\t\"phone\": \"8888888888\",\n\t\"tosAgreement\": true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:3001/users?phone=8888888888",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"users"
+					],
+					"query": [
+						{
+							"key": "phone",
+							"value": "8888888888"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:3001/tokens",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"firstName\": \"Donald\",\n\t\"lastName\": \"Duck\",\n\t\"password\": \"password123\",\n\t\"phone\": \"8888888888\",\n\t\"tosAgreement\": true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:3001/tokens",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"tokens"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:3001/tokens?id=babn4u3s5esat73sv7ei",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:3001/tokens?id=dsb4jjh58jjp27m1auvu",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"tokens"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "dsb4jjh58jjp27m1auvu"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:3001/tokens?id=babn4u3s5esat73sv7ei",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": \"dsb4jjh58jjp27m1auvu\",\n\t\"extend\": true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:3001/tokens?id=babn4u3s5esat73sv7ei",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"tokens"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "babn4u3s5esat73sv7ei"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:3001/tokens?id=babn4u3s5esat73sv7ei",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:3001/tokens?id=babn4u3s5esat73sv7ei",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"tokens"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "babn4u3s5esat73sv7ei"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:3001/users",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "token",
+						"value": "m63ztpwn8t8etjfypope",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"firstName\": \"Donald\",\n\t\"lastName\": \"Duck\",\n\t\"password\": \"password122\",\n\t\"phone\": \"8888888888\",\n\t\"tosAgreement\": true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:3001/users",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:3001/users",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "token",
+						"value": "m63ztpwn8t8etjfypope",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"firstName\": \"Donald\",\n\t\"lastName\": \"Duck\",\n\t\"password\": \"password122\",\n\t\"phone\": \"8888888888\",\n\t\"tosAgreement\": true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:3001/users?phone=8888888888",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"users"
+					],
+					"query": [
+						{
+							"key": "phone",
+							"value": "8888888888"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
