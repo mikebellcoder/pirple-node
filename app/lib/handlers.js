@@ -72,7 +72,7 @@ handlers._users.post = function (data, callback) {
             }
         });
     } else {
-        callback(400, { 'Error': 'Missing required fields' });
+        callback(400, { 'Error': 'Missing required fields (up100)' });
     }
 };
 
@@ -104,7 +104,7 @@ handlers._users.get = function (data, callback) {
             }
         });
     } else {
-        callback(400, { 'Error': 'Missing required field' });
+        callback(400, { 'Error': 'Missing required field (ug101)' });
     }
 };
 
@@ -168,7 +168,7 @@ handlers._users.put = function (data, callback) {
                     callback(400, {'Error': 'Missing Fields to update'});
             }
         } else {
-            callback(400, {'Error': 'Missing required field'});
+            callback(400, {'Error': 'Missing required field (up102)'});
         }
 };
 
@@ -204,7 +204,7 @@ handlers._users.delete = function (data, callback) {
             }
         });
     } else {
-        callback(400, { 'Error': 'Missing required field' });
+        callback(400, { 'Error': 'Missing required field (ud103)' });
     }
 };
 
@@ -264,7 +264,7 @@ handlers._tokens.post = function(data, callback) {
             }
         })
     } else {
-        callback(400, {'Error': 'Missing required field(s)'});
+        callback(400, {'Error': 'Missing required field(s) (tp101)'});
     }
 };
 // Tokens - get
@@ -283,7 +283,7 @@ handlers._tokens.get = function(data, callback) {
             }
         });
     } else {
-        callback(400, { 'Error': 'Missing required field' });
+        callback(400, { 'Error': 'Missing required field (tg102)' });
     }
 }
 
@@ -318,7 +318,7 @@ handlers._tokens.put = function(data, callback) {
             }
         });
     } else {
-        callback(400, {'Error': 'Missing required field(s) or field(s) are invalid'})
+        callback(400, {'Error': 'Missing required field(s) or field(s) are invalid (tp103)'})
     }
 
 
@@ -345,7 +345,7 @@ handlers._tokens.delete = function(data, callback) {
             }
         });
     } else {
-        callback(400, { 'Error': 'Missing required field' });
+        callback(400, { 'Error': 'Missing required field (td104)' });
     }
 }
 
